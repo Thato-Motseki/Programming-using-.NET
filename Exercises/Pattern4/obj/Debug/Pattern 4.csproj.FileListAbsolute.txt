@@ -1,0 +1,7 @@
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 4\bin\Debug\Pattern 4.exe.config
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 4\bin\Debug\Pattern 4.exe
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 4\bin\Debug\Pattern 4.pdb
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 4\obj\Debug\Pattern 4.csproj.AssemblyReference.cache
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 4\obj\Debug\Pattern 4.csproj.CoreCompileInputs.cache
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 4\obj\Debug\Pattern 4.exe
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 4\obj\Debug\Pattern 4.pdb
