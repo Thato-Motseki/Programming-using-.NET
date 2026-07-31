@@ -1,0 +1,7 @@
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 7\bin\Debug\Pattern 7.exe.config
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 7\bin\Debug\Pattern 7.exe
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 7\bin\Debug\Pattern 7.pdb
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 7\obj\Debug\Pattern 7.csproj.AssemblyReference.cache
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 7\obj\Debug\Pattern 7.csproj.CoreCompileInputs.cache
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 7\obj\Debug\Pattern 7.exe
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 7\obj\Debug\Pattern 7.pdb
