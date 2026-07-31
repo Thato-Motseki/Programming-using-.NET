@@ -1,0 +1,7 @@
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 8\bin\Debug\Pattern 8.exe.config
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 8\bin\Debug\Pattern 8.exe
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 8\bin\Debug\Pattern 8.pdb
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 8\obj\Debug\Pattern 8.csproj.AssemblyReference.cache
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 8\obj\Debug\Pattern 8.csproj.CoreCompileInputs.cache
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 8\obj\Debug\Pattern 8.exe
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 8\obj\Debug\Pattern 8.pdb
