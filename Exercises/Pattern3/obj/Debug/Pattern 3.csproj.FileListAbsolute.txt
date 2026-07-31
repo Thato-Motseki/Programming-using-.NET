@@ -1,0 +1,7 @@
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 3\bin\Debug\Pattern 3.exe.config
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 3\bin\Debug\Pattern 3.exe
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 3\bin\Debug\Pattern 3.pdb
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 3\obj\Debug\Pattern 3.csproj.AssemblyReference.cache
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 3\obj\Debug\Pattern 3.csproj.CoreCompileInputs.cache
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 3\obj\Debug\Pattern 3.exe
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 3\obj\Debug\Pattern 3.pdb
