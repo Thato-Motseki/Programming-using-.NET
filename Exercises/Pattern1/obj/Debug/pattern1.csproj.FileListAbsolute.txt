@@ -1,0 +1,7 @@
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\pattern1\bin\Debug\pattern1.exe.config
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\pattern1\bin\Debug\pattern1.exe
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\pattern1\bin\Debug\pattern1.pdb
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\pattern1\obj\Debug\pattern1.csproj.AssemblyReference.cache
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\pattern1\obj\Debug\pattern1.csproj.CoreCompileInputs.cache
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\pattern1\obj\Debug\pattern1.exe
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\pattern1\obj\Debug\pattern1.pdb
