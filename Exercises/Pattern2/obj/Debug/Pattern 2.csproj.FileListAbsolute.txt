@@ -1,0 +1,7 @@
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 2\bin\Debug\Pattern 2.exe.config
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 2\bin\Debug\Pattern 2.exe
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 2\bin\Debug\Pattern 2.pdb
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 2\obj\Debug\Pattern 2.csproj.AssemblyReference.cache
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 2\obj\Debug\Pattern 2.csproj.CoreCompileInputs.cache
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 2\obj\Debug\Pattern 2.exe
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 2\obj\Debug\Pattern 2.pdb
