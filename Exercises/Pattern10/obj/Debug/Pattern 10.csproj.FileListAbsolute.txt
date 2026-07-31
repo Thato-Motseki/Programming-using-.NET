@@ -1,0 +1,7 @@
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 10\obj\Debug\Pattern 10.csproj.AssemblyReference.cache
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 10\obj\Debug\Pattern 10.csproj.CoreCompileInputs.cache
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 10\bin\Debug\Pattern 10.exe.config
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 10\bin\Debug\Pattern 10.exe
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 10\bin\Debug\Pattern 10.pdb
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 10\obj\Debug\Pattern 10.exe
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Pattern 10\obj\Debug\Pattern 10.pdb
