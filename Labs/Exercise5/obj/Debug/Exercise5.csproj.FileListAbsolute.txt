@@ -1,0 +1,7 @@
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Labs\Exercise5\bin\Debug\Exercise5.exe.config
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Labs\Exercise5\bin\Debug\Exercise5.exe
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Labs\Exercise5\bin\Debug\Exercise5.pdb
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Labs\Exercise5\obj\Debug\Exercise5.csproj.AssemblyReference.cache
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Labs\Exercise5\obj\Debug\Exercise5.csproj.CoreCompileInputs.cache
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Labs\Exercise5\obj\Debug\Exercise5.exe
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Labs\Exercise5\obj\Debug\Exercise5.pdb
