@@ -5,3 +5,10 @@ C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\EcoCashMobileMon
 C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\EcoCashMobileMoney\bin\Debug\EcoCashMobileMoney.pdb
 C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\EcoCashMobileMoney\obj\Debug\EcoCashMobileMoney.exe
 C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\EcoCashMobileMoney\obj\Debug\EcoCashMobileMoney.pdb
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\THATO MOTSEKI ICA 3\bin\Debug\EcoCashMobileMoney.exe.config
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\THATO MOTSEKI ICA 3\bin\Debug\EcoCashMobileMoney.exe
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\THATO MOTSEKI ICA 3\bin\Debug\EcoCashMobileMoney.pdb
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\THATO MOTSEKI ICA 3\obj\Debug\EcoCashMobileMoney.csproj.AssemblyReference.cache
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\THATO MOTSEKI ICA 3\obj\Debug\EcoCashMobileMoney.csproj.CoreCompileInputs.cache
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\THATO MOTSEKI ICA 3\obj\Debug\EcoCashMobileMoney.exe
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\THATO MOTSEKI ICA 3\obj\Debug\EcoCashMobileMoney.pdb
