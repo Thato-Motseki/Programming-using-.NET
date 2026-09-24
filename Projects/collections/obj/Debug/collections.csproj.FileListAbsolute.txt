@@ -1,0 +1,7 @@
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\collections\bin\Debug\collections.exe.config
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\collections\bin\Debug\collections.exe
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\collections\bin\Debug\collections.pdb
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\collections\obj\Debug\collections.csproj.AssemblyReference.cache
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\collections\obj\Debug\collections.csproj.CoreCompileInputs.cache
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\collections\obj\Debug\collections.exe
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\collections\obj\Debug\collections.pdb
