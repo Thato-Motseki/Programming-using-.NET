@@ -1,0 +1,72 @@
+DATABASE CONNECTION TROUBLESHOOTING GUIDE
+==========================================
+
+The application requires SQL Server to run the database. You have several options:
+
+OPTION 1: Install SQL Server LocalDB (Recommended - Easiest)
+============================================================
+1. Download SQL Server 2022 Express LocalDB from Microsoft:
+   https://www.microsoft.com/en-us/sql-server/sql-server-downloads
+
+2. Choose the "Express" edition and run the installer
+3. During installation, select "LocalDB" as the component to install
+4. The connection string (localdb)\mssqllocaldb should work automatically
+5. Run the application - it will auto-create the database on first run
+
+OPTION 2: Use SQL Server Express (if already installed)
+========================================================
+1. Open App.config in the project
+2. Look for the connectionStrings section
+3. Replace the current connection string with:
+   Server=.\SQLEXPRESS;Database=EcoCashDB;Integrated Security=true;Connection Timeout=30;
+4. Save the file and rebuild the application
+5. Run the application
+
+OPTION 3: Use an existing SQL Server instance
+==============================================
+1. Open App.config
+2. Update the connection string with your server name:
+   Server=YOUR_SERVER_NAME;Database=EcoCashDB;Integrated Security=true;Connection Timeout=30;
+3. Make sure the SQL Server instance is running
+4. Run the application - it will auto-create the database
+
+TROUBLESHOOTING
+===============
+If you still get a connection error:
+
+1. Check if SQL Server is running
+   - Open Services (services.msc) and look for SQL Server services
+   - If not started, right-click and select "Start"
+
+2. Verify the connection string is correct
+   - For LocalDB: (localdb)\mssqllocaldb
+   - For Express: .\SQLEXPRESS
+   - For named instance: .\INSTANCENAME
+
+3. Check database creation permissions
+   - The application needs permission to create databases
+   - Run Visual Studio as Administrator if needed
+
+4. Check the logs
+   - Look for ecocash.log in the application's bin\Debug folder
+   - It contains detailed error messages
+
+DATABASE AUTO-CREATION
+======================
+Once you have SQL Server configured:
+1. The application will automatically:
+   - Connect to the SQL Server master database
+   - Check if EcoCashDB exists
+   - Create it if it doesn't exist
+   - Create required tables (Accounts, Transactions)
+   - Seed default test accounts
+
+All data persists in the database between application runs.
+
+FALLBACK BEHAVIOR
+=================
+If database connection fails:
+- The application will show an error message
+- It will offer to run with sample in-memory data
+- Click OK to continue with local data only
+- Data will NOT persist to database in this mode

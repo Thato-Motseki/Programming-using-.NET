@@ -17,15 +17,49 @@ namespace EcoCashSimulation
         private readonly Color ink = Color.FromArgb(15, 23, 42);
         private readonly Color teal = Color.FromArgb(37, 99, 235);
         private readonly Color pale = Color.FromArgb(245, 248, 255);
+        private DatabaseManager _dbManager;
+        private DataAccessLayer _dataAccessLayer;
 
         public MainForm()
         {
-            CreateSampleAccounts();
+            try
+            {
+                _dbManager = new DatabaseManager();
+                _dbManager.InitializeDatabase();
+                _dataAccessLayer = new DataAccessLayer(_dbManager);
+                LoadAccountsFromDatabase();
+            }
+            catch (Exception ex)
+            {
+                string errorMsg = $"Error connecting to database:\n\n{ex.Message}\n\n" +
+                    "This usually means SQL Server is not installed or not running.\n\n" +
+                    "Solutions:\n" +
+                    "1. Install SQL Server 2022 Express LocalDB from microsoft.com\n" +
+                    "2. Or install SQL Server Express\n" +
+                    "3. Or check if your SQL Server service is running\n\n" +
+                    "See DATABASE_SETUP.txt for detailed instructions.\n\n" +
+                    "For now, the application will run with sample data.";
+
+                MessageBox.Show(errorMsg, "Database Connection Error");
+                Logger.Log($"Database initialization failed: {ex.Message}");
+                CreateSampleAccounts();
+            }
+
             Text = "EcoCash Lesotho";
             StartPosition = FormStartPosition.CenterScreen;
             MinimumSize = new Size(920, 600);
             Size = new Size(1080, 700);
             ShowLogin();
+        }
+
+        private void LoadAccountsFromDatabase()
+        {
+            accounts.Clear();
+            var dbAccounts = _dataAccessLayer.LoadAllAccounts();
+            foreach (var kvp in dbAccounts)
+            {
+                accounts[kvp.Key] = kvp.Value;
+            }
         }
 
         private void CreateSampleAccounts()
@@ -79,7 +113,24 @@ namespace EcoCashSimulation
                     if (accounts.ContainsKey(number)) { MessageBox.Show("That number is already registered."); return; }
                     if (string.IsNullOrWhiteSpace(name.Text) || pin.Text.Length != 4 || !pin.Text.All(char.IsDigit)) { MessageBox.Show("Enter a name and a 4-digit numeric PIN."); return; }
                     if (pin.Text != confirm.Text) { MessageBox.Show("PINs do not match."); return; }
-                    currentAccount = new Account(number, name.Text.Trim(), pin.Text, 0m); accounts.Add(number, currentAccount); dialog.DialogResult = DialogResult.OK;
+
+                    currentAccount = new Account(number, name.Text.Trim(), pin.Text, 0m);
+
+                    // Save to database
+                    try
+                    {
+                        if (_dataAccessLayer != null)
+                        {
+                            _dataAccessLayer.SaveAccount(currentAccount);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Logger.Log($"Error saving account to database: {ex.Message}");
+                    }
+
+                    accounts.Add(number, currentAccount);
+                    dialog.DialogResult = DialogResult.OK;
                 };
                 dialog.Controls.Add(create);
                 if (dialog.ShowDialog(this) == DialogResult.OK) ShowDashboard();
@@ -107,9 +158,15 @@ namespace EcoCashSimulation
         private void AddAction(string text, int x, int y, EventHandler action) { Button button = ButtonFor(text, Color.White, teal, x, y, 145, 150); button.Click += action; contentPanel.Controls.Add(button); }
         private void RefreshDashboard() { balanceLabel.Text = "M " + currentAccount.Balance.ToString("0.00"); historyGrid.DataSource = currentAccount.GetTransactions().OrderByDescending(t => t.TransactionDate).Select(t => new { Type = t.TransactionType, Amount = "M " + t.Amount.ToString("0.00"), Reference = t.Reference, Date = t.TransactionDate.ToString("dd/MM/yyyy HH:mm"), Status = t.Status }).ToList(); }
 
-        private void Deposit() { string amountText; if (!Prompt("Deposit money", "Amount (M)", out amountText)) return; decimal amount; if (!decimal.TryParse(amountText, out amount) || amount <= 0) { MessageBox.Show("Amount must be greater than zero."); return; } DepositTransaction transaction = new DepositTransaction(currentAccount, amount); transaction.Process(); currentAccount.AddTransaction(transaction); RefreshDashboard(); MessageBox.Show("Deposit successful.\nReference: " + transaction.Reference); }
-        private void CashOut() { string amountText; if (!Prompt("Cash out", "Amount (M)", out amountText)) return; decimal amount; if (!decimal.TryParse(amountText, out amount) || amount <= 0) { MessageBox.Show("Amount must be greater than zero."); return; } if (!ConfirmPin()) return; try { CashOutTransaction transaction = new CashOutTransaction(currentAccount, amount); transaction.Process(); currentAccount.AddTransaction(transaction); RefreshDashboard(); MessageBox.Show("Cash out successful."); } catch (InsufficientBalanceException ex) { MessageBox.Show(ex.Message, "Cash out"); } }
-        private void SendMoney() { string recipientText; if (!Prompt("Send money", "Recipient number", out recipientText)) return; int recipientNumber; if (!int.TryParse(recipientText, out recipientNumber) || !accounts.ContainsKey(recipientNumber) || recipientNumber == currentAccount.PhoneNumber) { MessageBox.Show("Choose a valid recipient account other than yourself."); return; } string amountText; if (!Prompt("Send money", "Amount (M)", out amountText)) return; decimal amount; if (!decimal.TryParse(amountText, out amount) || amount <= 0) { MessageBox.Show("Amount must be greater than zero."); return; } if (!ConfirmPin()) return; try { Account recipient = accounts[recipientNumber]; SendMoneyTransaction transaction = new SendMoneyTransaction(currentAccount, recipient, amount); transaction.Process(); currentAccount.AddTransaction(transaction); recipient.AddTransaction(transaction); RefreshDashboard(); MessageBox.Show("Sent to " + recipient.Name + "."); } catch (InsufficientBalanceException ex) { MessageBox.Show(ex.Message, "Send money"); } }
+        private void Deposit() { string amountText; if (!Prompt("Deposit money", "Amount (M)", out amountText)) return; decimal amount; if (!decimal.TryParse(amountText, out amount) || amount <= 0) { MessageBox.Show("Amount must be greater than zero."); return; } DepositTransaction transaction = new DepositTransaction(currentAccount, amount); transaction.Process(); currentAccount.AddTransaction(transaction); 
+            try { if (_dataAccessLayer != null) { _dataAccessLayer.SaveTransaction(currentAccount, transaction); _dataAccessLayer.SaveAccount(currentAccount); } } catch (Exception ex) { Logger.Log($"Error saving transaction: {ex.Message}"); }
+            RefreshDashboard(); MessageBox.Show("Deposit successful.\nReference: " + transaction.Reference); }
+        private void CashOut() { string amountText; if (!Prompt("Cash out", "Amount (M)", out amountText)) return; decimal amount; if (!decimal.TryParse(amountText, out amount) || amount <= 0) { MessageBox.Show("Amount must be greater than zero."); return; } if (!ConfirmPin()) return; try { CashOutTransaction transaction = new CashOutTransaction(currentAccount, amount); transaction.Process(); currentAccount.AddTransaction(transaction); 
+            try { if (_dataAccessLayer != null) { _dataAccessLayer.SaveTransaction(currentAccount, transaction); _dataAccessLayer.SaveAccount(currentAccount); } } catch (Exception ex) { Logger.Log($"Error saving transaction: {ex.Message}"); }
+            RefreshDashboard(); MessageBox.Show("Cash out successful."); } catch (InsufficientBalanceException ex) { MessageBox.Show(ex.Message, "Cash out"); } }
+        private void SendMoney() { string recipientText; if (!Prompt("Send money", "Recipient number", out recipientText)) return; int recipientNumber; if (!int.TryParse(recipientText, out recipientNumber) || !accounts.ContainsKey(recipientNumber) || recipientNumber == currentAccount.PhoneNumber) { MessageBox.Show("Choose a valid recipient account other than yourself."); return; } string amountText; if (!Prompt("Send money", "Amount (M)", out amountText)) return; decimal amount; if (!decimal.TryParse(amountText, out amount) || amount <= 0) { MessageBox.Show("Amount must be greater than zero."); return; } if (!ConfirmPin()) return; try { Account recipient = accounts[recipientNumber]; SendMoneyTransaction transaction = new SendMoneyTransaction(currentAccount, recipient, amount); transaction.Process(); currentAccount.AddTransaction(transaction); recipient.AddTransaction(transaction); 
+            try { if (_dataAccessLayer != null) { _dataAccessLayer.SaveTransaction(currentAccount, transaction); _dataAccessLayer.SaveTransaction(recipient, transaction); _dataAccessLayer.SaveAccount(currentAccount); _dataAccessLayer.SaveAccount(recipient); } } catch (Exception ex) { Logger.Log($"Error saving transaction: {ex.Message}"); }
+            RefreshDashboard(); MessageBox.Show("Sent to " + recipient.Name + "."); } catch (InsufficientBalanceException ex) { MessageBox.Show(ex.Message, "Send money"); } }
         private bool ConfirmPin() { string pin; if (!Prompt("Confirm transaction", "PIN", out pin, true)) return false; if (!currentAccount.VerifyPin(pin)) { MessageBox.Show("Incorrect PIN. Transaction cancelled."); return false; } return true; }
         private bool Prompt(string title, string caption, out string value, bool password = false) { using (Form dialog = new Form()) { dialog.Text = title; dialog.Size = new Size(340, 170); dialog.StartPosition = FormStartPosition.CenterParent; Label label = new Label { Text = caption, Location = new Point(25, 25), AutoSize = true }; TextBox input = new TextBox { Location = new Point(25, 55), Width = 270, UseSystemPasswordChar = password }; Button ok = ButtonFor("Continue", teal, Color.White, 25, 90, 100, 32); ok.DialogResult = DialogResult.OK; dialog.Controls.AddRange(new Control[] { label, input, ok }); dialog.AcceptButton = ok; value = dialog.ShowDialog(this) == DialogResult.OK ? input.Text : null; return value != null; } }
         private TextBox Input(string caption, Control parent, int x, int y, bool password) { TextBox box = new TextBox { Location = new Point(x, y + 22), Width = 340, Height = 36, Font = new Font("Segoe UI", 13, FontStyle.Regular), BorderStyle = BorderStyle.FixedSingle, UseSystemPasswordChar = password }; ApplyRoundedCorners(box, 10); parent.Controls.Add(LabelFor(caption, 10, FontStyle.Bold, ink, new Point(x, y), new Size(340, 20))); parent.Controls.Add(box); return box; }

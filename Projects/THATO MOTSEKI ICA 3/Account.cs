@@ -11,6 +11,7 @@ namespace EcoCashSimulation
 
         public int PhoneNumber { get; private set; }
         public string Name { get; private set; }
+        public int DatabaseId { get; set; }
 
         public decimal Balance
         {
@@ -23,6 +24,7 @@ namespace EcoCashSimulation
             Name = name;
             this.pin = pin;
             this.balance = balance;
+            DatabaseId = 0;
 
             transactions = new List<Transaction>();
         }
@@ -30,6 +32,11 @@ namespace EcoCashSimulation
         public bool VerifyPin(string enteredPin)
         {
             return enteredPin == pin;
+        }
+
+        public string GetPin()
+        {
+            return pin;
         }
 
         public void ChangePin(string newPin)
