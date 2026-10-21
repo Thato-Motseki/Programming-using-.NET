@@ -1,0 +1,19 @@
+[2026-10-21 16:15:57] Database initialization error: Cannot open database "EcoCashDB" requested by the login. The login failed.
+Login failed for user 'LAPTOP-THATO\thato'.
+[2026-10-21 16:18:21] Database initialization error: Cannot open database "EcoCashDB" requested by the login. The login failed.
+Login failed for user 'LAPTOP-THATO\thato'.
+[2026-10-21 16:28:37] Database 'EcoCashDB' created successfully.
+[2026-10-21 16:28:37] Default accounts seeded successfully.
+[2026-10-21 16:28:52] Database initialization failed: There is already an open DataReader associated with this Command which must be closed first.
+[2026-10-21 16:29:38] Error saving transaction: The INSERT statement conflicted with the FOREIGN KEY constraint "FK__Transacti__Accou__3B75D760". The conflict occurred in database "EcoCashDB", table "dbo.Accounts", column 'AccountID'.
+The statement has been terminated.
+[2026-10-21 16:45:03] Database 'EcoCashDB' already exists.
+[2026-10-21 16:45:03] Database already contains accounts. Skipping seed data.
+[2026-10-21 16:52:40] Database 'EcoCashDB' already exists.
+[2026-10-21 16:52:40] Database already contains accounts. Skipping seed data.
+[2026-10-21 17:03:49] Database 'EcoCashDB' already exists.
+[2026-10-21 17:03:50] Database already contains accounts. Skipping seed data.
+[2026-10-21 20:47:53] Database 'EcoCashDB' already exists.
+[2026-10-21 20:47:53] Database already contains accounts. Skipping seed data.
+[2026-10-21 21:00:39] Database 'EcoCashDB' already exists.
+[2026-10-21 21:00:39] Database already contains accounts. Skipping seed data.

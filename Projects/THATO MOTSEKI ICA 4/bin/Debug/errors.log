@@ -1,0 +1,43 @@
+----------------------------------------
+Date: 9/22/2026 12:19:57 PM
+Error: Insufficient balance. Available balance is M 2000.00
+Stack Trace:    at EcoCashSimulation.Account.RemoveMoney(Decimal amount) in C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\EcoCashMobileMoney\Account.cs:line 49
+   at EcoCashSimulation.CashOutTransaction.Process() in C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\EcoCashMobileMoney\CashOutTransaction.cs:line 15
+   at EcoCashSimulation.Program.CashOut() in C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\EcoCashMobileMoney\Program.cs:line 404
+----------------------------------------
+Date: 9/22/2026 12:29:58 PM
+Error: Invalid phone number entered.
+Stack Trace: 
+----------------------------------------
+Date: 9/22/2026 12:32:21 PM
+Error: Invalid phone number entered.
+Stack Trace: 
+----------------------------------------
+Date: 9/22/2026 12:32:26 PM
+Error: Invalid phone number entered.
+Stack Trace: 
+----------------------------------------
+Date: 9/22/2026 12:32:30 PM
+Error: Invalid phone number entered.
+Stack Trace: 
+----------------------------------------
+Date: 9/22/2026 12:34:02 PM
+Error: Invalid phone number entered.
+Stack Trace: 
+----------------------------------------
+Date: 9/23/2026 5:02:54 PM
+Error: Input string was not in a correct format.
+Stack Trace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at EcoCashSimulation.Program.SendMoney() in C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\EcoCashMobileMoney\Program.cs:line 307
+----------------------------------------
+Date: 9/23/2026 5:05:12 PM
+Error: Insufficient balance. Available balance is M 2000.00
+Stack Trace:    at EcoCashSimulation.Account.RemoveMoney(Decimal amount) in C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\EcoCashMobileMoney\Account.cs:line 49
+   at EcoCashSimulation.SendMoneyTransaction.Process() in C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\EcoCashMobileMoney\SendMoneyTransaction.cs:line 20
+   at EcoCashSimulation.Program.SendMoney() in C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\EcoCashMobileMoney\Program.cs:line 350
+----------------------------------------
+Date: 9/23/2026 5:07:59 PM
+Error: Invalid phone number entered.
+Stack Trace: 
