@@ -1,0 +1,2 @@
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS.Tests\obj\Debug\SEIMS.Tests.exe
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS.Tests\obj\Debug\SEIMS.Tests.pdb

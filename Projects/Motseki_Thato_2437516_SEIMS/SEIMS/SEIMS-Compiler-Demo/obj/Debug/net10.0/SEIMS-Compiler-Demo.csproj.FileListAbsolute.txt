@@ -1,0 +1,15 @@
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS-Compiler-Demo\obj\Debug\net10.0\SEIMS-Compiler-Demo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS-Compiler-Demo\obj\Debug\net10.0\SEIMS-Compiler-Demo.AssemblyInfoInputs.cache
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS-Compiler-Demo\obj\Debug\net10.0\SEIMS-Compiler-Demo.AssemblyInfo.cs
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS-Compiler-Demo\obj\Debug\net10.0\SEIMS-Compiler-Demo.csproj.CoreCompileInputs.cache
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS-Compiler-Demo\obj\Debug\net10.0\SEIMS-Compiler-Demo.sourcelink.json
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS-Compiler-Demo\bin\Debug\net10.0\SEIMS-Compiler-Demo.exe
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS-Compiler-Demo\bin\Debug\net10.0\SEIMS-Compiler-Demo.deps.json
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS-Compiler-Demo\bin\Debug\net10.0\SEIMS-Compiler-Demo.runtimeconfig.json
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS-Compiler-Demo\bin\Debug\net10.0\SEIMS-Compiler-Demo.dll
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS-Compiler-Demo\bin\Debug\net10.0\SEIMS-Compiler-Demo.pdb
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS-Compiler-Demo\obj\Debug\net10.0\SEIMS-Compiler-Demo.dll
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS-Compiler-Demo\obj\Debug\net10.0\refint\SEIMS-Compiler-Demo.dll
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS-Compiler-Demo\obj\Debug\net10.0\SEIMS-Compiler-Demo.pdb
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS-Compiler-Demo\obj\Debug\net10.0\SEIMS-Compiler-Demo.genruntimeconfig.cache
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS-Compiler-Demo\obj\Debug\net10.0\ref\SEIMS-Compiler-Demo.dll

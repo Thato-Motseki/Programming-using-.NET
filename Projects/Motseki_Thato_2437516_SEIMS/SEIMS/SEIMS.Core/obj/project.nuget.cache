@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ipA/6fdYOyc=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\thato\\Documents\\CODING\\Programming-Using-.NET\\Projects\\Motseki_Thato_2437516_SEIMS\\SEIMS\\SEIMS.Core\\SEIMS.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\thato\\.nuget\\packages\\system.security.cryptography.pkcs\\9.0.21\\system.security.cryptography.pkcs.9.0.21.nupkg.sha512",
+    "C:\\Users\\thato\\.nuget\\packages\\system.security.cryptography.xml\\9.0.21\\system.security.cryptography.xml.9.0.21.nupkg.sha512"
+  ],
+  "logs": []
+}

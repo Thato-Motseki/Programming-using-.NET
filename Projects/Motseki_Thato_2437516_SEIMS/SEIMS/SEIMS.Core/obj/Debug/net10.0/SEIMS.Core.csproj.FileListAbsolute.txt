@@ -1,0 +1,13 @@
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS.Core\bin\Debug\net10.0\SEIMS.Core.deps.json
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS.Core\bin\Debug\net10.0\SEIMS.Core.dll
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS.Core\bin\Debug\net10.0\SEIMS.Core.pdb
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS.Core\obj\Debug\net10.0\SEIMS.Core.csproj.AssemblyReference.cache
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS.Core\obj\Debug\net10.0\SEIMS.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS.Core\obj\Debug\net10.0\SEIMS.Core.AssemblyInfoInputs.cache
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS.Core\obj\Debug\net10.0\SEIMS.Core.AssemblyInfo.cs
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS.Core\obj\Debug\net10.0\SEIMS.Core.csproj.CoreCompileInputs.cache
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS.Core\obj\Debug\net10.0\SEIMS.Core.sourcelink.json
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS.Core\obj\Debug\net10.0\SEIMS.Core.dll
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS.Core\obj\Debug\net10.0\refint\SEIMS.Core.dll
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS.Core\obj\Debug\net10.0\SEIMS.Core.pdb
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS.Core\obj\Debug\net10.0\ref\SEIMS.Core.dll

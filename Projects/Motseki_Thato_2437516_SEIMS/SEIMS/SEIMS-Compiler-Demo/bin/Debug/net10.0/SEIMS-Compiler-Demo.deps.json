@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "SEIMS-Compiler-Demo/1.0.0": {
+        "runtime": {
+          "SEIMS-Compiler-Demo.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SEIMS-Compiler-Demo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

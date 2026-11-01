@@ -1,0 +1,10 @@
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS.Tests\obj\Debug\SEIMS.Tests.csproj.AssemblyReference.cache
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS.Tests\obj\Debug\SEIMS.Tests.csproj.CoreCompileInputs.cache
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS.Tests\bin\Debug\SEIMS.Tests.exe.config
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS.Tests\bin\Debug\SEIMS.Tests.exe
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS.Tests\bin\Debug\SEIMS.Tests.pdb
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS.Tests\bin\Debug\SEIMS.Core.dll
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS.Tests\bin\Debug\SEIMS.Core.pdb
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS.Tests\obj\Debug\SEIMS.Te.875749CD.Up2Date
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS.Tests\obj\Debug\SEIMS.Tests.exe
+C:\Users\thato\Documents\CODING\Programming-Using-.NET\Projects\Motseki_Thato_2437516_SEIMS\SEIMS\SEIMS.Tests\obj\Debug\SEIMS.Tests.pdb

@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="SEIMS.Core/SEIMS.Core.csproj" />
+  <Project Path="SEIMS.Data/SEIMS.Data.csproj" />
+  <Project Path="SEIMS.Services/SEIMS.Services.csproj" />
+	<Project Path="SEIMS.Tests/SEIMS.Tests.csproj" Id="b7f8d4e2-7a21-4ec5-9f63-1c8a2d4e6b90" />
+  <Project Path="SEIMS.WinForms/SEIMS.WinForms.csproj" />
+</Solution>
